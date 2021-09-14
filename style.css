@@ -98,3 +98,12 @@ body {font-family: 'Merriweather', serif;
           a {
               text-decoration: none;
           }
+
+          footer {
+            display: flex;
+            background-color: #F7F9FB; 
+            color: #687864;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+          }
