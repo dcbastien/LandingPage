@@ -2,7 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body {font-family: 'Merriweather', serif;
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200;1,700&family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200;1,700&family=Satisfy&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+body {
+      /* font-family: 'Merriweather', serif; */
+      /* font-family: 'Source Sans Pro', sans-serif */
+      /* font-family: 'Nunito', sans-serif; */
+      /* font-family: 'Satisfy', cursive; */
+      font-family: 'Lato', sans-serif;
       font-size: 15px;
       padding: 0;
       margin: 0;
@@ -10,11 +23,15 @@ body {font-family: 'Merriweather', serif;
       background-color: whitesmoke}
 
       header {
-        background-color: #F7F9FB; 
-        color: #687864;
+        /* background-color: transparent;  */
+        background-color: #112D32; 
+        /* background-color: #687864; */
+        color: whitesmoke;
+        /* color:#F7F9FB ; */
         min-height: 70px;
-        border-bottom: 3px solid #112D32;
-        padding: 5px 0;
+        border-top: 1px solid #F7F9FB;
+        border-bottom: 1px solid #F7F9FB;
+        padding: 0px 0;
       }
       header .container {
         display: flex;
@@ -31,11 +48,13 @@ body {font-family: 'Merriweather', serif;
       
       header li {
         list-style: none;
-        padding: 0 20px;
+        padding: 0 25px;
+       
       }
       
       header a {
-        color: #687864;
+        color: #687864 ;
+        ;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 18px;
@@ -66,21 +85,44 @@ body {font-family: 'Merriweather', serif;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(50%);
+        filter: brightness(25%);
       }
 
     #content {
-        color: #ddd3b1;
+        /* color: #ddd3b1; */
+        color: #687864;
         z-index: 2;
         text-align: center; }
-    #content h1 {
+
+    #content h1:first-of-type {
         font-size: 50px;
+        line-height: 105%;
+        font-weight: 100;
+        color:
     }
+
+    #content h1:nth-of-type(2){
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Satisfy', cursive;
+  color: whitesmoke;
+}
+
+#content h1,h2{
+  margin: 0;
+}
      
-        #content h2 {
-            border-bottom: 1px solid #aaa;
+#location {
+            /* border-bottom: 1px solid #aaa; */
             font-size: 25px;
-            font-style: italic;}
+            font-style: italic;
+            font-family: 'Satisfy', cursive;}
+
+#mission {
+  font-style: italic;
+  font-weight: 100;
+  color: whitesmoke
+}
     
 
         #click {
@@ -88,7 +130,8 @@ body {font-family: 'Merriweather', serif;
             margin-top: 25px;
             border: 2px solid #eae7dc;
             padding: 10px 30px;
-            background-color: #112D32;
+            background-color: transparent;
+            /* background-color: #112D32; */
             color: #eae7dc;
             border-radius: 10px;
             font-size: 20px;
@@ -98,3 +141,21 @@ body {font-family: 'Merriweather', serif;
           a {
               text-decoration: none;
           }
+
+          #branding {
+            font-family: 'Satisfy', cursive;
+          }
+
+header a:hover {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 20px; }
+  
+
+#click:hover {
+  transform: scale(1.25);
+  /* background-color: transparent; */
+  background-color: #112D32;
+}
+
+@media
